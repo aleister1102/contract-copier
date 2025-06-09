@@ -1,4 +1,4 @@
-module photocopier
+module github.com/aleister1102/contract-copier
 
 go 1.24.2
 
