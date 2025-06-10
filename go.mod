@@ -1,4 +1,4 @@
-module contract-cloner
+module github.com/aleister1102/contract-cloner
 
 go 1.24.2
 
