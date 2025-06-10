@@ -7,7 +7,7 @@ import (
 	"io"
 	"net/http"
 	"os"
-	"photocopier/internal"
+	"contract-cloner/internal"
 
 	"github.com/spf13/cobra"
 )

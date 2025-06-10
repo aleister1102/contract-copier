@@ -8,7 +8,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "photocopier",
+	Use:   "contract-cloner",
 	Short: "A CLI tool to download verified smart contract source code.",
 	Long:  `A command-line tool written in Go to download verified source code for smart contracts from various block explorers.`,
 }

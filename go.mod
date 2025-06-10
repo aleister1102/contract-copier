@@ -1,4 +1,4 @@
-module photocopier
+module contract-cloner
 
 go 1.24.2
 
