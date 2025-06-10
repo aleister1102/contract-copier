@@ -37,7 +37,7 @@ var zksyncCmd = &cobra.Command{
 			fmt.Printf("Error reading response body: %v\n", err)
 			return
 		}
-		fmt.Printf("Raw API Response:\n%s\n", string(bodyBytes))
+		// fmt.Printf("Raw API Response:\n%s\n", string(bodyBytes))
 
 		// Re-assign resp.Body with a new reader for json.NewDecoder
 		resp.Body = io.NopCloser(bytes.NewBuffer(bodyBytes))
