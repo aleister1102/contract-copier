@@ -1,4 +1,4 @@
-module github.com/aleister1102/contract-cloner
+module github.com/aleister1102/hermes
 
 go 1.24.2
 

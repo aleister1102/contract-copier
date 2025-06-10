@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/aleister1102/contract-cloner/internal"
+	"github.com/aleister1102/hermes/internal"
 
 	"github.com/spf13/cobra"
 )
