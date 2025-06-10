@@ -6,7 +6,8 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"contract-cloner/internal"
+
+	"github.com/aleister1102/contract-cloner/internal"
 
 	"github.com/spf13/cobra"
 )

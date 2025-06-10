@@ -7,7 +7,8 @@ import (
 	"io"
 	"net/http"
 	"os"
-	"contract-cloner/internal"
+
+	"github.com/aleister1102/contract-cloner/internal"
 
 	"github.com/spf13/cobra"
 )

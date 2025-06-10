@@ -1,7 +1,7 @@
 // main.go
 package main
 
-import "contract-cloner/cmd"
+import "github.com/aleister1102/contract-cloner/cmd"
 
 func main() {
 	cmd.Execute()
