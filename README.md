@@ -1,4 +1,4 @@
-# Contract Cloner
+# Hermes
 
 A command-line tool written in Go to download verified source code for smart contracts from various block explorers.
 
