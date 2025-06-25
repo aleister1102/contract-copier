@@ -1,4 +1,4 @@
-module github.com/aleister1102/hermes
+module github.com/aleister1102/photocopier
 
 go 1.24.2
 

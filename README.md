@@ -1,4 +1,4 @@
-# Hermes
+# Photocopier
 
 A command-line tool written in Go to download verified source code for smart contracts from various block explorers.
 
@@ -20,29 +20,29 @@ A command-line tool written in Go to download verified source code for smart con
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/aleister1102/hermes.git
+    git clone https://github.com/aleister1102/photocopier.git
     ```
 2.  Navigate to the project directory:
     ```sh
-    cd hermes
+    cd photocopier
     ```
 3.  Build the executable:
     ```sh
     go build
     ```
-    This will create a `hermes` (or `hermes.exe` on Windows) executable in the project root.
+    This will create a `photocopier` (or `photocopier.exe` on Windows) executable in the project root.
 
-4.  (Optional) Add the executable to your system's PATH to make it accessible from anywhere. Alternatively, you can run it directly from the project directory (e.g., `./hermes` or `.\hermes.exe`).
+4.  (Optional) Add the executable to your system's PATH to make it accessible from anywhere. Alternatively, you can run it directly from the project directory (e.g., `./photocopier` or `.\photocopier.exe`).
 
 ### Using `go install`
 
 If the repository is public and you have Go installed, you can install directly using:
 
 ```sh
-go install github.com/aleister1102/hermes@latest
+go install github.com/aleister1102/photocopier@latest
 ```
 
-This will install the `hermes` binary into your `$GOPATH/bin` or `$HOME/go/bin` directory. Ensure this directory is in your system's PATH.
+This will install the `photocopier` binary into your `$GOPATH/bin` or `$HOME/go/bin` directory. Ensure this directory is in your system's PATH.
 
 ## Environment Variables
 
@@ -55,14 +55,14 @@ The tool uses subcommands to specify the network/explorer to fetch from.
 ### General Syntax
 
 ```sh
-hermes [command] [contract_address] [flags]
+photocopier [command] [contract_address] [flags]
 ```
 
 ### Available Commands
 
 1.  **`sepolia`**: Download contract source code from Sepolia Testnet (via Etherscan).
     ```sh
-    hermes sepolia <CONTRACT_ADDRESS> -o <OUTPUT_DIRECTORY>
+    photocopier sepolia <CONTRACT_ADDRESS> -o <OUTPUT_DIRECTORY>
     ```
     -   `<CONTRACT_ADDRESS>`: The address of the smart contract on Sepolia.
     -   `-o, --output <OUTPUT_DIRECTORY>`: (Optional) The directory where the source code will be saved. Defaults to the current directory (`.`). A subdirectory named after the contract address will be created within this output directory.
@@ -71,19 +71,19 @@ hermes [command] [contract_address] [flags]
     ```sh
     # Make sure ETHERSCAN_API_KEY is set in your environment
     export ETHERSCAN_API_KEY="YOUR_ETHERSCAN_API_KEY"
-    hermes sepolia 0x123...abc -o ./downloaded_contracts
+    photocopier sepolia 0x123...abc -o ./downloaded_contracts
     ```
 
 2.  **`zksync`**: Download contract source code from zkSync Era Mainnet.
     ```sh
-    hermes zksync <CONTRACT_ADDRESS> -o <OUTPUT_DIRECTORY>
+    photocopier zksync <CONTRACT_ADDRESS> -o <OUTPUT_DIRECTORY>
     ```
     -   `<CONTRACT_ADDRESS>`: The address of the smart contract on zkSync Era Mainnet.
     -   `-o, --output <OUTPUT_DIRECTORY>`: (Optional) The directory where the source code will be saved. Defaults to the current directory (`.`). A subdirectory named after the contract address will be created within this output directory.
 
     **Example:**
     ```sh
-    hermes zksync 0x456...def -o ./zk_contracts
+    photocopier zksync 0x456...def -o ./zk_contracts
     ```
 
 ### Global Flags
